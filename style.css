@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img{
+    border-radius: 5px;
+}
+.navbar{
+    background-color: #81667A;
+    color: white;
+    padding: 25px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cart {
+    position: relative;
+    background-color: #white;
+    color: #white;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 4px;
+}
+
+.cartamount{
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    background: red;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    padding: 3px;
+    background-color: #red;
+}
+
+/**
+this is for shop items
+**/
+
+.shop{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+    } 
+}
+@media (max-width: 500px) {
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+    } 
+}
+.item{
+    border: 2px solid #81667A;
+    border-radius: 5px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;  
+    padding: 10px;
+    gap: 10px;
+}
+
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 20px;
+}
+.bi-plus-lg{
+    color: green;
+}
+.bi-dash-lg{
+    color: red;
+}
